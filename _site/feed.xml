@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-02T13:59:15-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">lrolofson.com</title><subtitle></subtitle><entry><title type="html">twitjudge.py</title><link href="http://localhost:4000/blog/projects/2019/08/27/twitjudge.html" rel="alternate" type="text/html" title="twitjudge.py" /><published>2019-08-27T11:43:00-04:00</published><updated>2019-08-27T11:43:00-04:00</updated><id>http://localhost:4000/blog/projects/2019/08/27/twitjudge</id><content type="html" xml:base="http://localhost:4000/blog/projects/2019/08/27/twitjudge.html">&lt;p&gt;Announcing &lt;code class=&quot;highlighter-rouge&quot;&gt;twitjudge.py&lt;/code&gt;, a horrible, horrible piece of code. Initially I intended to wait to
+make it public until I cleaned it up a bit, but I decided to just &lt;em&gt;send it&lt;/em&gt; and see what happens.&lt;/p&gt;
+
+&lt;p&gt;Twitjudge is a quick-and-dirty script that parses through your Twitter archive, displays your
+tweets one by one, and asks if you love it. Right now it talks like Donald Trump, which I thought
+was appropriate and funny when I wrote it because I was pretty punchy, but in the future I think
+I’ll change the prompts to emulate a more respectable Twitter user.&lt;/p&gt;
+
+&lt;p&gt;I’m a bleeding heart, so it’s licensed under the GPLv3. I don’t know why anyone would ever want
+to fork it or even use it in the first place, but hey. Principles.&lt;/p&gt;
+
+&lt;p&gt;You can check out the source over on &lt;a href=&quot;https://github.com/lrolofson/twitjudge.py&quot;&gt;my github.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="programming" /><category term="python" /><category term="github" /><category term="twitjudge" /><category term="twitter" /><summary type="html">Announcing twitjudge.py, a horrible, horrible piece of code. Initially I intended to wait to make it public until I cleaned it up a bit, but I decided to just send it and see what happens.</summary></entry></feed>
