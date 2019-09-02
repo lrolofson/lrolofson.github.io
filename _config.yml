@@ -27,7 +27,7 @@ twitter_username: lelandrolofson
 github_username:  lrolofson
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
