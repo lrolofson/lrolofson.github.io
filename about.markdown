@@ -1,17 +1,25 @@
 ---
-layout: default
-title: /about/
-permalink: /about/
+layout: page
+title: /about
+permalink: /about
 ---
+{% assign dateOfBirth = "July 21, 1994" | date:'%s' %}
+{% assign timeAtUpdate = 'now' | date: '%s' %}
+{% assign ageSeconds = timeAtUpdate | minus: dateOfBirth %}
+{% assign secYear = 365.25 | times: 24 | times: 60 | times: 60 %}
+{% assign ageYears = ageSeconds | divided_by: secYear %}
 
-# leland
+{:refdef: style="text-align: center;"}
+![photo of Leland](/assets/images/headshot.jpg){: width="38.2%" }
+{: refdef}
 
-![headshot](/assets/headshot.jpg)
+# /leland_rolofson
 
-Complete dork. Works at a greenhouse. Likes lots of things, but likes computers and
-plants the most.
+This is Leland. You can call him Lee if you prefer monosyllabic names.
+ 
+{{ ageYears | round }} years old. Huge dork. Works at a greenhouse. Likes lots of things, but likes computers and plants the most. Mostly harmless.
 
-# site
+# /site
 
-This is my blog. It's composed in [markdown](https://tools.ietf.org/html/rfc7763) and I use
+I'm a blog. I'm composed in [markdown](https://tools.ietf.org/html/rfc7763) and use
 [jekyll](https://jekyllrb.com) to turn it into pretty HTML.
