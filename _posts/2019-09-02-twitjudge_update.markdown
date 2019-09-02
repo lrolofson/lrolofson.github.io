@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "twitjudge.py and moving to github pages"
-date:   2019-08-27 11:43:00 -0400
+date:   2019-09-02 14:25:00 -0400
 categories: [blog, projects]
 tags: [programming, python, github, twitjudge, twitter]
 ---
