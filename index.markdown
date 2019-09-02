@@ -4,4 +4,7 @@
 
 layout: home
 ---
-Hi there, welcome to my site.
+Hi there, welcome to my site. This is the homepage. From here, you can:
+
+- Check out my [posts](/posts)
+- Check out my [about page](/about)
