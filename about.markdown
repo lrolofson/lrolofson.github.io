@@ -10,7 +10,7 @@ permalink: /about
 {% assign ageYears = ageSeconds | divided_by: secYear %}
 
 {:refdef: style="text-align: center;"}
-![photo of Leland](/assets/images/headshot.jpg){: width="38.2%" }
+![photo of Leland](/assets/images/headshot.jpg){: width="75%" }
 {: refdef}
 
 # /leland_rolofson
