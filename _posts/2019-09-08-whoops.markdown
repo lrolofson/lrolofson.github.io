@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "oh no"
+date:   2019-09-08 23:45:00 -0400
+categories: [blog, projects]
+tags: [programming, jekyll, site, whoops]
+---
+
+i broke some of the pages on the site and i'm not sure how but it's too late to do anything about it
+
+The primary lesson here is don't rush things into production, always test them in the development environment. I suspect I'll end up rolling the repo back to some point before I broke it. That means if you're reading this either the site is still broken or I managed to fix it without rolling back. The secondary lesson is that I still don't understand jekyll all that well yet. ¯\\\_(ツ)\_/¯
+
+Anyway, I'm gonna go get some sleep. G'nite.
+
+-- Lee
