@@ -9,11 +9,11 @@ permalink: /about
 {% assign secYear = 365.25 | times: 24 | times: 60 | times: 60 %}
 {% assign ageYears = ageSeconds | divided_by: secYear %}
 
-{:refdef: style="text-align: center;"}
+# /leland_rolofson
+
+{:refdef: style="text-align: left;"}
 ![photo of Leland](/assets/images/headshot.jpg){: width="20%" }
 {: refdef}
-
-# /leland_rolofson
 
 This is Leland. You can call him Lee if you prefer monosyllabic names.
 
