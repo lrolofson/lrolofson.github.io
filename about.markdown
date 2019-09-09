@@ -11,9 +11,7 @@ permalink: /about
 
 # /leland_rolofson
 
-{:refdef: style="text-align: right;"}
-![photo of Leland](/assets/images/headshot.jpg){: width="20%" }
-{: refdef}
+<img src="/assets/images/headshot.jpg" align="right" width="20%">Leland's face</img>
 
 This is Leland. You can call him Lee if you prefer monosyllabic names.
 
