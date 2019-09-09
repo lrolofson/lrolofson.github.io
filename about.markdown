@@ -11,7 +11,7 @@ permalink: /about
 
 # /leland_rolofson
 
-{:refdef: style="text-align: left;"}
+{:refdef: style="text-align: right;"}
 ![photo of Leland](/assets/images/headshot.jpg){: width="20%" }
 {: refdef}
 
