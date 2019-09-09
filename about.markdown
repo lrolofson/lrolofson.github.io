@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /about
 permalink: /about
 ---
@@ -16,7 +16,7 @@ permalink: /about
 # /leland_rolofson
 
 This is Leland. You can call him Lee if you prefer monosyllabic names.
- 
+
 {{ ageYears | round }} years old. Huge dork. Works at a greenhouse. Likes lots of things, but likes computers and plants the most. Mostly harmless.
 
 # /site
