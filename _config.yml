@@ -28,7 +28,7 @@ twitter_username: lelandrolofson
 github_username:  lrolofson
 
 # Build settings
-theme: jekyll-swiss
+theme: minima
 plugins:
   - jekyll-feed
 
