@@ -11,7 +11,7 @@ permalink: /about
 
 # /leland_rolofson
 
-<img src="/assets/images/headshot.jpg" align="right" width="20%">Leland's face</img>
+<img src="/assets/images/headshot.jpg" align="right" width="20%" alt="Leland's Face">
 
 This is Leland. You can call him Lee if you prefer monosyllabic names.
 
