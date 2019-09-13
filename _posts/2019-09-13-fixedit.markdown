@@ -10,6 +10,6 @@ Hey y'all,
 
 ~~***I*** FIXED THE SITE! HUZZAH, I AM AN GENIUS!~~
 
-apparently the site fixed itself somehow. Maybe it took Github a minute to build the jekyll site.
+apparently the site fixed itself somehow. Maybe it took Github a minute to build the jekyll site. In any case, the theme isn't broken anymore.
 
 -- Lee
