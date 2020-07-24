@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "oh no i'm old now"
+date:   2020-07-21 09:18:00 -0500
+categories: [blog]
+tags: [birthday, old age]
+---
+
+I'm 26 now. Ooga chaka, ooga chaka, ooga ooga ooga chaka
+
+![dead meme](/assets/dancing_baby.gif)
+
+I'm pretty confident that nobody's going to check the repo, which means nobody is going to figure out that I actually posted this on July 24th. Suckers!
