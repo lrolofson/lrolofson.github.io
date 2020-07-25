@@ -40,11 +40,11 @@ main{
     display: flex;
     justify-content: center;
     align-content: center;
+    align-self: flex-start;
     color:  azure;
-    width: auto;
-    max-width: 5000px;
-    border: 10px azure outset;
-    margin:auto;
+    max-width:1000px;
+    border: 1vw azure outset;
+    margin-top:5vh;
     padding: auto;
     text-align: center;
     font-size: auto;
@@ -69,6 +69,7 @@ main{
 #errcode {
     font-weight: bold;
     font-size: 130%;
+    text-decoration: underline;
     margin:1vh;
     margin-bottom: 0px;
     padding:1vw;
