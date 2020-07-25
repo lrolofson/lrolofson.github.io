@@ -1,0 +1,165 @@
+@-webkit-keyframes gradloop {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes gradloop {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes gradloop {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+
+html{
+    background: skyblue; /*fallback*/
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+
+    background: linear-gradient(255deg, #b1187e, #0badf2, #a50bf2, #44e76b, #ffffff);
+    background-size: 1000% 1000%;
+    -webkit-animation: gradloop 120s ease infinite;
+    -moz-animation: gradloop 120s ease infinite;
+    animation: gradloop 120s ease infinite;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.msgbox{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:  azure;
+    width: auto;
+    max-width: 5000px;
+    border: 10px azure outset;
+    margin:auto;
+    padding: auto;
+    text-align: center;
+    font-size: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+}
+
+#boxbackground {
+    position: absolute;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background-color:rgb(9, 65, 65);
+    opacity: .25;
+    z-index:-1
+}
+
+#msg{
+}
+
+#errcode {
+    font-weight: bold;
+    font-size: 130%;
+    margin:1vh;
+    margin-bottom: 0px;
+    padding:1vw;
+    line-height:1vh;
+    animation: underline 5s forwards
+}
+
+#greeting{
+    margin:1vh;
+    padding: 1vw;
+}
+
+#errpoem {
+    word-wrap: unset;
+    font-weight: lighter;
+    font-size: 100%;
+    margin:1vh;
+    margin-top:0px;
+    padding:1vw;
+}
+
+#mountainrange {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-self: flex-start;
+    align-items: flex-end;
+    justify-content: center;
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+
+.mountain{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    border-bottom: 66vh solid rgb(94, 108, 124);
+    animation: bouncemtn1 7s ease-in-out forwards;
+}
+
+.mountain2{
+    position:absolute;
+    display:flex;
+    justify-self:end;
+    align-items:center;
+    flex-direction: column;
+    border-left: 21vw solid transparent;
+    border-right: 21vw solid transparent;
+    border-bottom: 75vh solid rgb(79, 166, 192);
+    z-index:-2;
+    animation: bouncemtn2 11s ease-in-out forwards;
+}
+
+.mountain3{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 40vw solid transparent;
+    border-right: 40vw solid transparent;
+    border-bottom: 48vh solid rgb(14, 78, 82);
+    animation: bouncemtn3 10s ease forwards;
+}
+
+.snowcap{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 5vw solid transparent;
+    border-right: 5vw solid transparent;
+    border-bottom: 8vh solid azure;
+}
+
+@keyframes bouncemtn1 {
+    from {transform:translate(15vw,100vh)}
+    to {transform:translate(19vw,0vh)}
+}
+
+@keyframes bouncemtn2 {
+    from {transform:translate(4vw,100vh)}
+    to {transform:translate(10vw,0vh)}
+}
+
+@keyframes bouncemtn3 {
+    from {transform:translate(-5vw,100vh)}
+    to {transform:translate(-20vw,0vh)}
+}
+
+@keyframes underline {
+    to {text-decoration-line: underline;}
+}
