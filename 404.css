@@ -57,9 +57,10 @@ main{
     padding:0;
     height:100%;
     width:100%;
-    background-color:rgb(9, 65, 65);
-    opacity: .25;
-    z-index:-1
+    background-color:rgb(77, 77, 77);
+    z-index:-1;
+    opacity:.25;
+    animation: darken 5s both;
 }
 
 #msg{
@@ -72,7 +73,6 @@ main{
     margin-bottom: 0px;
     padding:1vw;
     line-height:1vh;
-    animation: underline 5s forwards
 }
 
 #greeting{
@@ -80,7 +80,7 @@ main{
     padding: 1vw;
 }
 
-#errpoem {
+.errpoem {
     word-wrap: unset;
     font-weight: lighter;
     font-size: 100%;
@@ -160,6 +160,6 @@ main{
     to {transform:translate(-20vw,0vh)}
 }
 
-@keyframes underline {
-    to {text-decoration-line: underline;}
+@keyframes darken {
+    to {opacity:.75;}
 }
