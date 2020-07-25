@@ -22,8 +22,8 @@ html{
     height: 100%;
     overflow:hidden;
 
-    background: linear-gradient(255deg, #b1187e, #0badf2, #a50bf2, #44e76b, #ffffff);
-    background-size: 1000% 1000%;
+    background: linear-gradient(255deg, #861260, #085c80, #470668, #195357, #535353);
+    background-size: 500% 500%;
     -webkit-animation: gradloop 120s ease infinite;
     -moz-animation: gradloop 120s ease infinite;
     animation: gradloop 120s ease infinite;
@@ -32,6 +32,7 @@ html{
 main{
     display: flex;
     justify-content: center;
+    animation: fadein 10s backwards;
 }
 
 .msgbox{
@@ -59,8 +60,7 @@ main{
     width:100%;
     background-color:rgb(77, 77, 77);
     z-index:-1;
-    opacity:.25;
-    animation: darken 5s both;
+    opacity:.85;
 }
 
 #msg{
@@ -108,7 +108,7 @@ main{
     flex-direction: column;
     border-left: 30vw solid transparent;
     border-right: 30vw solid transparent;
-    border-bottom: 66vh solid rgb(94, 108, 124);
+    border-bottom: 66vh solid rgb(128, 106, 148);
     animation: bouncemtn1 7s ease-in-out forwards;
 }
 
@@ -120,8 +120,8 @@ main{
     flex-direction: column;
     border-left: 21vw solid transparent;
     border-right: 21vw solid transparent;
-    border-bottom: 75vh solid rgb(79, 166, 192);
-    z-index:-2;
+    border-bottom: 75vh solid rgb(36, 66, 75);
+    z-index:-1;
     animation: bouncemtn2 11s ease-in-out forwards;
 }
 
@@ -130,9 +130,9 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-left: 40vw solid transparent;
-    border-right: 40vw solid transparent;
-    border-bottom: 48vh solid rgb(14, 78, 82);
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+    border-bottom: 50vh solid rgb(30, 28, 36);
     animation: bouncemtn3 10s ease forwards;
 }
 
@@ -147,19 +147,47 @@ main{
 
 @keyframes bouncemtn1 {
     from {transform:translate(15vw,100vh)}
-    to {transform:translate(19vw,0vh)}
+    to {transform:translate(19vw,10vh)rotate(5deg)}
 }
 
 @keyframes bouncemtn2 {
     from {transform:translate(4vw,100vh)}
-    to {transform:translate(10vw,0vh)}
+    to {transform:translate(10vw,0vh)rotate(2deg)}
 }
 
 @keyframes bouncemtn3 {
     from {transform:translate(-5vw,100vh)}
-    to {transform:translate(-20vw,0vh)}
+    to {transform:translate(-20vw,10vh)rotate(-5deg)}
 }
 
-@keyframes darken {
-    to {opacity:.75;}
+@keyframes fadein {
+    from {opacity:0;}
 }
+
+/*blatantly stolen from stackoverflow:*/
+.moon {
+    position: absolute
+;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: azure;
+    overflow: hidden;
+    animation: moonrise 10s ease both;
+    z-index:-5;
+}
+.moon:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 40%;
+    left: -12.5%;
+    background: rgba(42, 39, 40,.65);
+    border-radius: 60%/50%;
+}
+
+@keyframes moonrise {
+    0%{transform:translate(-50vw,100vh)scale(1.5)rotate(90deg);}
+    100%{transform:translate(30vw,15vh)scale(2.5)rotate(100deg);}
+} 
