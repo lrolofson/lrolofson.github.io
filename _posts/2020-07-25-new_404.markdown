@@ -8,6 +8,6 @@ tags: [web development]
 
 As an exercise in CSS, I wrote a new 404 page. It's entirely HTML and CSS. No image files. I didn't even use templates or anything! Ok, I did steal the moon from StackOverflow. I regret nothing.
 
-By far the most challenging thing to me about this project was keeping everything straight. In the future I think I'll have an easier go of it simply because I'm now refamiliarized with CSS, but next time I do something like this I'll have to keep some physical reference materials handy. Keeping `align` and `justify` straight proved harder than it should have. Some of that confusion can undoubtedly be blamed on my refusal to take a break until I was done. In any case, it's up at https://www.lrolofson.com/404, or indeed any garbled bullshit you choose to put at the end of the URL.
+By far the most challenging thing to me about this project was keeping everything straight. In the future I think I'll have an easier go of it simply because I'm now refamiliarized with CSS, but next time I do something like this I'll have to keep some physical reference materials handy. Keeping `align` and `justify` straight proved harder than it should have. Some of that confusion can undoubtedly be blamed on my refusal to take a break until I was done. In any case, the page is [here](https://www.lrolofson.com/404].
 
 Now that I've broken myself back in on CSS, I'm weighing the possibility of redoing the entire site. It's not that big and the content is all formatted in tidy little markdown files. How long could it take? Famous last words, eh?
