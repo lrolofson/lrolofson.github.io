@@ -15,7 +15,7 @@ permalink: /about
 
 This is Leland. You can call him Lee if you prefer monosyllabic names.
 
-{{ ageYears | round }} years old. Huge dork. Likes lots of things, but likes computers and plants the most. Mostly harmless.
+{{ ageYears | round }} years old. Huge dork. Mostly harmless. Mediocre at lots of things.
 
 <br>
 
