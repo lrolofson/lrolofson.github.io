@@ -24,15 +24,14 @@ html{
 
     background: linear-gradient(255deg, #861260, #085c80, #470668, #195357, #535353);
     background-size: 500% 500%;
-    -webkit-animation: gradloop 120s ease infinite;
-    -moz-animation: gradloop 120s ease infinite;
-    animation: gradloop 120s ease infinite;
+    -webkit-animation: gradloop 60m ease infinite;
+    -moz-animation: gradloop 60m ease infinite;
+    animation: gradloop 60m ease infinite;
 }
 
 main{
     display: flex;
     justify-content: center;
-    animation: fadein 10s backwards;
 }
 
 .msgbox{
@@ -50,17 +49,8 @@ main{
     font-size: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     z-index: 1;
-}
-
-#boxbackground {
-    position: absolute;
-    margin:0;
-    padding:0;
-    height:100%;
-    width:100%;
-    background-color:rgb(77, 77, 77);
-    z-index:-1;
-    opacity:.85;
+    background-color: rgba(0, 0, 0, 0.829);
+    backdrop-filter: blur(5px);
 }
 
 #errcode {
@@ -100,6 +90,17 @@ main{
     visibility:visible;
 }
 
+.mountainright{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    border-bottom: 66vh solid rgb(63, 49, 65);
+    animation: bouncemtnright 20s ease-out forwards;
+}
+
 .mountaincenter{
     position:absolute;
     display:flex;
@@ -112,17 +113,6 @@ main{
     animation: bouncemtncenter 20s ease-out forwards;
 }
 
-.mountainright{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-left: 30vw solid transparent;
-    border-right: 30vw solid transparent;
-    border-bottom: 66vh solid rgb(63, 49, 65);
-    animation: bouncemtnright 20s ease-out forwards;
-}
-
 .mountainleft{
     position: absolute;
     display: flex;
@@ -130,7 +120,7 @@ main{
     flex-direction: column;
     border-left: 45vw solid transparent;
     border-right: 45vw solid transparent;
-    border-bottom: 50vh solid rgb(30, 28, 36);
+    border-bottom: 50vh solid rgb(28, 61, 57);
     animation: bouncemtnleft 20s ease-out forwards;
 }
 
@@ -143,7 +133,7 @@ main{
     border-bottom: 8vh solid azure;
 }
 
-@keyframes bouncemtnleft {
+@keyframes bouncemtnright {
     from {transform:translate(15vw,100vh)}
     to {transform:translate(19vw,10vh)rotate(5deg)}
 }
@@ -153,7 +143,7 @@ main{
     to {transform:translate(10vw,0vh)rotate(2deg)}
 }
 
-@keyframes bouncemtnright {
+@keyframes bouncemtnleft {
     from {transform:translate(-5vw,100vh)}
     to {transform:translate(-20vw,10vh)rotate(-5deg)}
 }
@@ -197,12 +187,6 @@ main{
 } 
 
 @keyframes moonslide {
-    from{transform:translateX(-100vh)}
-    to{transform:translateX(50vh)}
-}
-
-@keyframes spin{
-    0%{transform:rotate(0deg)}
-    50%{transform:rotate(180deg)}
-    100%{transform:rotate(360deg)}
+    from{transform:translateX(-50vw)}
+    to{transform:translateX(40vw)}
 }
