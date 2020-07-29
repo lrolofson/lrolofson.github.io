@@ -63,9 +63,6 @@ main{
     opacity:.85;
 }
 
-#msg{
-}
-
 #errcode {
     font-weight: bold;
     font-size: 130%;
@@ -100,20 +97,10 @@ main{
     position:absolute;
     margin:0px;
     padding:0px;
+    visibility:visible;
 }
 
-.mountain{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-left: 30vw solid transparent;
-    border-right: 30vw solid transparent;
-    border-bottom: 66vh solid rgb(128, 106, 148);
-    animation: bouncemtn1 7s ease-in-out forwards;
-}
-
-.mountain2{
+.mountaincenter{
     position:absolute;
     display:flex;
     justify-self:end;
@@ -122,11 +109,21 @@ main{
     border-left: 21vw solid transparent;
     border-right: 21vw solid transparent;
     border-bottom: 75vh solid rgb(36, 66, 75);
-    z-index:-1;
-    animation: bouncemtn2 11s ease-in-out forwards;
+    animation: bouncemtncenter 20s ease-out forwards;
 }
 
-.mountain3{
+.mountainright{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    border-bottom: 66vh solid rgb(63, 49, 65);
+    animation: bouncemtnright 20s ease-out forwards;
+}
+
+.mountainleft{
     position: absolute;
     display: flex;
     align-items: center;
@@ -134,7 +131,7 @@ main{
     border-left: 45vw solid transparent;
     border-right: 45vw solid transparent;
     border-bottom: 50vh solid rgb(30, 28, 36);
-    animation: bouncemtn3 10s ease forwards;
+    animation: bouncemtnleft 20s ease-out forwards;
 }
 
 .snowcap{
@@ -146,17 +143,17 @@ main{
     border-bottom: 8vh solid azure;
 }
 
-@keyframes bouncemtn1 {
+@keyframes bouncemtnleft {
     from {transform:translate(15vw,100vh)}
     to {transform:translate(19vw,10vh)rotate(5deg)}
 }
 
-@keyframes bouncemtn2 {
+@keyframes bouncemtncenter {
     from {transform:translate(4vw,100vh)}
     to {transform:translate(10vw,0vh)rotate(2deg)}
 }
 
-@keyframes bouncemtn3 {
+@keyframes bouncemtnright {
     from {transform:translate(-5vw,100vh)}
     to {transform:translate(-20vw,10vh)rotate(-5deg)}
 }
@@ -166,6 +163,12 @@ main{
 }
 
 /*blatantly stolen from stackoverflow:*/
+
+.moonx {
+    position:fixed;
+    animation:moonslide 60s ease-in-out forwards;
+}
+
 .moon {
     position: absolute
 ;
@@ -174,8 +177,8 @@ main{
     border-radius: 50%;
     background: azure;
     overflow: hidden;
-    animation: moonrise 10s ease both;
-    z-index:-5;
+    animation: moonrise 60s ease-out both;
+    z-index:-10;
 }
 .moon:after {
     position: absolute;
@@ -189,6 +192,17 @@ main{
 }
 
 @keyframes moonrise {
-    0%{transform:translate(-50vw,100vh)scale(1.5)rotate(90deg);}
-    100%{transform:translate(30vw,15vh)scale(2.5)rotate(100deg);}
+    from{transform:translateY(80vh)scale(1.5)rotate(90deg);}
+    to{transform:translateY(15vh)scale(2.5)rotate(100deg);}
 } 
+
+@keyframes moonslide {
+    from{transform:translateX(-100vh)}
+    to{transform:translateX(50vh)}
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    50%{transform:rotate(180deg)}
+    100%{transform:rotate(360deg)}
+}
