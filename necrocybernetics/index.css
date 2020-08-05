@@ -1,3 +1,5 @@
+* {border: solid red 1px}
+
 html {
     display: flex;
     justify-content: center;
@@ -7,9 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: right;
+    justify-content: center;
     font-family: 'Segoe-UI', sans-serif;
-    width: 80%;
+    width: 61.8%;
 }
 
     header {
@@ -30,7 +32,6 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            font-size: 150%;
             color: rgba(0,0,0,0);
             background: url(fractal-bg.png);
             background-size: cover;
@@ -41,12 +42,14 @@ body {
                 text-align: right;
                 font-size: 200%;
                 font-weight: 1000;
-                line-height: 0;
+            }
+
+            .corp emoji {
+                font-size: 200%
             }
 
             .corp .motto {
                 text-align: left;
-                line-height: 0;
                 font-style: italic;
                 font-size: 100%;
                 font-weight: 50;
@@ -57,17 +60,25 @@ body {
             flex-direction: row;
             height: 100%;
             width: 100%;
+            align-items: center;
             justify-content: space-evenly;
             font-size: 100%;
             font-weight: lighter;
             color: black;
         }
 
-    article {
-        width: 80%;
-        color: black;
-        backdrop-filter: brightness(90%) blur(5px);
+    main {
+        justify-items: center;
     }
+
+        article {
+            width: 61.8%;
+            text-indent: 4ch;
+            color: black;
+            backdrop-filter: brightness(90%) blur(5px);
+            padding: 10px;
+            border-radius: 5px;
+        }
 
     footer {
         text-align: center;
