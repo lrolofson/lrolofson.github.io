@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: right;
     font-family: 'Segoe-UI', sans-serif;
     width: 80%;
 }
@@ -64,9 +64,8 @@ body {
         }
 
     article {
-        display: flex;
-        flex-direction: column;
-        color:black;
+        width: 80%;
+        color: black;
         backdrop-filter: brightness(90%) blur(5px);
     }
 
