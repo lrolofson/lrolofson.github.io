@@ -1,79 +1,74 @@
 * {
-    border: solid black 1px;
+border: solid black 1px;
 }
 
-html {
+body {
     display: flex;
     flex-direction: column;
-    background-size: cover;
-    justify-items: center;
+    position: absolute;
+    width: 80vw;
+    align-content: center;
+    justify-content: space-around;
     font-family: 'Segoe-UI', sans-serif;
 }
 
-    body {
+    header {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 80vw;
-        align-content: center;
-        justify-content: space-around;
+        flex-direction: row;
+        position: sticky;
+        top: 0px;
+        width: inherit;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: brightness(80%) blur(5px);
+        z-index: 1;
     }
 
-        header {
+        .corp {
             display: flex;
             flex-direction: row;
-            position: sticky;
-            top: 0px;
-            width: inherit;
             align-items: center;
-            justify-content: space-between;
-            backdrop-filter: brightness(80%) blur(5px);
-            z-index: 1;
+            justify-content: center;
+            font-size: 150%;
+            color: rgba(0,0,0,0);
+            background: url(fractal-bg.png);
+            background-clip:text;
         }
 
-            .corp {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                font-size: 150%;
-                color: rgba(0,0,0,0);
-                background: url(fractal-bg.png);
-                background-clip:text;
-            }
-
-            .corp .name {
-                text-align: right;
-                font-size: 200%;
-                font-weight: 1000;
-                line-height: 0;
-            }
-
-            .corp .motto {
-                text-align: left;
-                line-height: 0;
-                font-style: italic;
-                font-size: 100%;
-                font-weight: 50;
-            }
-
-            .sitenav {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: 100%;
-                justify-content: space-evenly;
-                font-size: 100%;
-                font-weight: lighter;
-                color: black;
-            }
-
-        article {
-            color:black;
-            backdrop-filter: brightness(90%) blur(5px);
-            width: 30vw;
+        .corp .name {
+            text-align: right;
+            font-size: 200%;
+            font-weight: 1000;
+            line-height: 0;
         }
 
-        footer {
-            text-align: center;
+        .corp .motto {
+            text-align: left;
+            line-height: 0;
+            font-style: italic;
+            font-size: 100%;
+            font-weight: 50;
         }
+
+        .sitenav {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            justify-content: space-evenly;
+            font-size: 100%;
+            font-weight: lighter;
+            color: black;
+        }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        color:black;
+        backdrop-filter: brightness(90%) blur(5px);
+        width: 30vw;
+    }
+
+    footer {
+        text-align: center;
+    }
