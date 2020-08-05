@@ -1,85 +1,95 @@
-* {border: solid red 1px}
-
-html {
-    display: flex;
-    justify-content: center;
-}
-
-body {
+body{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    font-family: 'Segoe-UI', sans-serif;
     width: 61.8%;
+    margin: auto;
+    font: normal normal normal 1em/1em "Segoe-UI", sans-serif;
 }
 
-    header {
+    header{
         display: flex;
         flex-direction: row;
-        position: sticky;
-        top: 0px;
-        align-items: center;
+        padding: 5px;
         justify-content: space-between;
-        backdrop-filter: brightness(80%) blur(5px);
-        z-index: 1;
-        border: solid teal 2px;
+        margin: 0;
+        backdrop-filter: brightness(80%) blur(3px);
         border-radius: 5px;
     }
 
-        .corp {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            color: rgba(0,0,0,0);
-            background: url(fractal-bg.png);
-            background-size: cover;
-            background-clip: text;
+        header *{
+            margin-top: .2em;
+            margin-bottom: .2em;
         }
 
-            .corp .name {
-                text-align: right;
-                font-size: 200%;
-                font-weight: 1000;
-            }
+        header .corp{
+            display: flex;
+            align-items: center;
+            background: url(fractal-bg.png);
+            background-clip: text;
+            color: transparent;
+            max-width: 40%;
+        }
 
-            .corp emoji {
-                font-size: 200%
-            }
+        header .corp .name{
+            text-align: right;
+            font-size: 225%;
+            font-weight: bold;
+        }
 
-            .corp .motto {
-                text-align: left;
-                font-style: italic;
-                font-size: 100%;
-                font-weight: 50;
-            }
+        header .corp .brain{
+            text-align: center;
+            font-size: 200%;
+        }
 
-        .sitenav {
+        header .corp .motto{
+            font-weight: lighter;
+            font-style: italic;
+            text-align: left;
+            line-height: 75%;
+        }
+
+        header .sitenav{
+            width: 60%;
             display: flex;
             flex-direction: row;
-            height: 100%;
-            width: 100%;
             align-items: center;
             justify-content: space-evenly;
-            font-size: 100%;
-            font-weight: lighter;
-            color: black;
+            font-weight: 1000;
         }
-
-    main {
-        justify-items: center;
+        
+    main{
+        display: flex;
     }
 
-        article {
-            width: 61.8%;
-            text-indent: 4ch;
-            color: black;
-            backdrop-filter: brightness(90%) blur(5px);
-            padding: 10px;
+        main section{
+        }
+
+            main section * {
+                margin: 0;
+            }
+
+        #tables * {
+            margin: .5em;
+            backdrop-filter: brightness(80%);
             border-radius: 5px;
         }
 
-    footer {
-        text-align: center;
+        #agenda-table{
+        }
+
+        #financial-table{
+        }
+
+        article{
+            margin-top: .5em;
+            text-indent: 4ch;
+            backdrop-filter: brightness(80%);
+            border-radius: 5px;
+        }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
     }
