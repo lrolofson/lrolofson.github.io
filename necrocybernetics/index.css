@@ -18,9 +18,7 @@ body{
         margin-left: 5vw;
         margin-right: 5vw;
         margin-top: .5vh;
-        margin-bottom: .5vh;
         padding-top: 0;
-        padding-bottom: .25%;
         justify-content: space-between;
         backdrop-filter: brightness(50%) blur(3px);
         border-radius: 5px;
@@ -120,6 +118,7 @@ body{
         justify-content: center;
         align-content: center;
         border-radius: 5px;
+        animation: fade-in 420ms ease-in 1;
     }
 
     .text-backdrop {
@@ -165,3 +164,8 @@ body{
             margin-top: 0;
             margin-bottom: .25em;
         }
+
+@keyframes fade-in{
+    from{opacity:0}
+    to{opacity:1}
+}
