@@ -20,7 +20,7 @@ body{
         flex-grow: 1;
     }
 
-        header .corp{
+        .corp{
             display: flex;
             flex-wrap: wrap;
             flex-shrink: 1;
@@ -37,7 +37,7 @@ body{
             margin-top: 0;
         }
 
-        header .corp .name{
+        .name{
             flex-wrap: wrap;
             text-align: left;
             font-size: 75%;
