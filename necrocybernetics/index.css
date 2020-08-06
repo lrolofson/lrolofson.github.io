@@ -159,13 +159,19 @@ body{
     }
 
         footer * {
-            margin-left: .5em;
-            margin-right: .5em;
+            margin-left: 5vw;
+            margin-right: 5vw;
             margin-top: 0;
             margin-bottom: .25em;
+            color: azure;
         }
 
 @keyframes fade-in{
     from{opacity:0}
     to{opacity:1}
+}
+
+@keyframes spin{
+    from{transform:rotate(0)}
+    to{transform:rotate(360)}
 }
