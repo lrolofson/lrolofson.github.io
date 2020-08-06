@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: slategray;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -74,7 +79,28 @@ body{
             padding-left: 5%;
             padding-right: 5%;
             flex-grow: 1;
-            color: darkslategray;
+            border-radius: 5px;
+        }
+
+        .sitenav li{
+            align-self: center;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .sitenav a{
+            height:100%;
+            border: solid darkslategray 3px;
+            border-radius: 3px;
+            background: slategray;
+            background-image:url(assets/images/electric_circuit.svg);
+            background-size:cover;
+            color: azure;
+            text-shadow: darkslategray 1px 1px;
+            display: flex;
+            position: sticky;
+            flex-grow: 1;
+            margin: 5px;
         }
 
     .coverstory{
@@ -112,7 +138,6 @@ body{
         font-style: italic;
         font-size: 5vw;
         line-height: 1em;
-        margin-bottom: 0;
     }
 
     .coverstory h2 {
