@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    font: normal normal normal 1em/1em "Segoe-UI", sans-serif;
+    font: normal normal normal 1em/2em "Segoe-UI", sans-serif;
     background: rgb(0, 0, 0);
     
 }
@@ -41,9 +41,9 @@ body{
             margin-top: 0;
         }
 
-        .corp{
+        .corp:hover{
             color: white;
-            transition: ease 1s;
+            transition: ease 250ms;
         }
 
         .name{
@@ -167,10 +167,9 @@ body{
         line-height: 1em;
     }
 
-    .coverstory h2 {
+    .text-box h2 {
         font-size: .8em;
-        font-weight: lighter;
-        margin-top: 5px;
+        font-weight: bold;
     }
 
     footer{
@@ -189,6 +188,10 @@ body{
             margin-bottom: .25em;
             color: azure;
         }
+
+.product-tier{
+    float: left;
+}
 
 @keyframes fade-in{
     from{opacity:0}
