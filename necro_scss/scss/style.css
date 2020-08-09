@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5vh 90vh 5vh;
+      grid-template-rows: 5vh 90vh 5vh;
+  background: black;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-backdrop-filter: brightness(0);
+          backdrop-filter: brightness(0);
+}
+
+header .corp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 155px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 75%;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(azure), to(gray));
+  background: linear-gradient(azure, gray);
+  background-clip: text;
+}
+
+header .corp .brain {
+  font-size: 300%;
+  margin-right: 2px;
+}
+
+header .corp p {
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+header .sitenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  list-style: none;
+}
+
+header .sitenav * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .sitenav a {
+  margin: 5px;
+  border-radius: 5px;
+  border: solid azure 2px;
+  color: azure;
+  background: darkslategray;
+}
+
+header .sitenav a:hover {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-box-shadow: 0px 0px 12px azure;
+          box-shadow: 0px 0px 12px azure;
+}
+
+header a {
+  text-decoration: none;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  overflow: hidden;
+  z-index: -1;
+}
+
+main article {
+  display: -ms-grid;
+  display: grid;
+  background: rgba(112, 128, 144, 0.233);
+}
+
+main article figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(assets/images/moss.jpg);
+  background-size: cover;
+  border-radius: 5px;
+}
+
+main article figure .text-box {
+  text-align: center;
+  -webkit-backdrop-filter: brightness(60%) blur(4px);
+          backdrop-filter: brightness(60%) blur(4px);
+  border-radius: 5px;
+  padding: 1ch;
+  font-size: 300%;
+}
+
+main article figure .text-box * {
+  margin: .5ch;
+  text-shadow: gray 1px 1px;
+}
+
+main article figure .text-box p {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+main article * {
+  color: azure;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 75%;
+  color: azure;
+}
+/*# sourceMappingURL=style.css.map */

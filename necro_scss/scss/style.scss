@@ -1,0 +1,133 @@
+$dark-color: gray;
+$light-color: azure;
+$btn: darkslategray;
+$btn-select: rgba(35, 101, 101, 0.75);
+$mat-color: rgba(112, 128, 144, 0.233);
+$bg-color: black;
+$red-color:rgb(208, 64, 45);
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-rows: 5vh 90vh 5vh;
+    background: $bg-color;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    backdrop-filter: brightness(0);
+
+    .corp {
+        display: flex;
+        width: 155px;
+        align-items: center;
+        font-size: 75%;
+        color: transparent;
+        background: linear-gradient($light-color, $dark-color);
+        background-clip: text;
+//todo: #4 fix background clipping on iOS
+
+
+        .brain {
+            font-size: 300%;
+            margin-right:2px;
+        }
+
+        p {
+            margin: 0;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+
+    .sitenav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
+
+        // todo: #3 list items should take up 100% of vertical header space
+
+        * {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            margin: 5px;
+            border-radius: 5px;
+            border: solid $light-color 2px;
+            color: $light-color;
+            background: $btn;
+        }
+
+        a:hover{
+            transition: 250ms;
+            box-shadow: 0px 0px 12px $light-color;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto;
+    overflow: hidden;
+    z-index: -1;
+
+    article {
+        display: grid;
+        background: $mat-color;
+
+        figure {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            background-image: url(assets/images/moss.jpg);
+            background-size: cover;
+            border-radius: 5px;
+
+            .text-box {
+                text-align: center;
+                backdrop-filter: brightness(60%) blur(4px);
+                border-radius: 5px;
+                padding: 1ch;
+                font-size: 300%;
+
+                * {
+                    margin: .5ch;
+                    text-shadow: $dark-color 1px 1px;
+                }
+
+                p{
+                    font-style: italic;
+                    font-weight: lighter;
+                }
+            }
+        }
+        
+        * {
+            color: azure;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 75%;
+    color: $light-color;
+}
