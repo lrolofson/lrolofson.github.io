@@ -15,7 +15,14 @@ permalink: /about
 
 This is Leland. You can call him Lee if you prefer monosyllabic names.
 
-{{ ageYears | round }} years old. Huge dork. Mostly harmless. Mediocre at lots of things.
+{{ ageYears | round }} years old. Huge dork. Mostly harmless. Mediocre at lots of things, including:
+
+* tinkering with computers and other electronics
+* video games like:
+    * rocket soccer
+    * factorio
+    * anything by zachtronics
+* movies
 
 <br>
 

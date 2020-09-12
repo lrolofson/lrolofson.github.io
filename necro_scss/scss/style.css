@@ -1,10 +1,25 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5vh 90vh 5vh;
-      grid-template-rows: 5vh 90vh 5vh;
+  height: 100%;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 5vh 90vh 2vh;
+      grid-template-rows: 5vh 90vh 2vh;
   background: black;
+  height: 100%;
 }
 
 header {
@@ -16,18 +31,13 @@ header {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-backdrop-filter: brightness(0);
-          backdrop-filter: brightness(0);
+  margin: 5px;
 }
 
 header .corp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 155px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -145,6 +155,10 @@ main article figure .text-box * {
   text-shadow: gray 1px 1px;
 }
 
+main article figure .text-box a {
+  border: solid 1px azure;
+}
+
 main article figure .text-box p {
   font-style: italic;
   font-weight: lighter;
@@ -155,13 +169,15 @@ main article * {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 75%;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: azure;
 }
 /*# sourceMappingURL=style.css.map */

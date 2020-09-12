@@ -6,23 +6,34 @@ $mat-color: rgba(112, 128, 144, 0.233);
 $bg-color: black;
 $red-color:rgb(208, 64, 45);
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
-    grid-template-rows: 5vh 90vh 5vh;
+    height:100%;
+    grid-template-columns: auto;
+    grid-template-rows: 5vh 90vh 2vh;
     background: $bg-color;
+    height: 100%;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
-    backdrop-filter: brightness(0);
+    margin: 5px;
 
     .corp {
         display: flex;
-        width: 155px;
         align-items: center;
         font-size: 75%;
         color: transparent;
@@ -112,7 +123,11 @@ main{
                     text-shadow: $dark-color 1px 1px;
                 }
 
-                p{
+                a {
+                    border: solid 1px $light-color;
+                }
+
+                p {
                     font-style: italic;
                     font-weight: lighter;
                 }
@@ -126,8 +141,9 @@ main{
 }
 
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
-    font-size: 75%;
+    align-content: center;
     color: $light-color;
 }
