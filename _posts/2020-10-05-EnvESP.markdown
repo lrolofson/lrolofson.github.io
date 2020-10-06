@@ -44,8 +44,8 @@ versatile sensor package. It tracks temperature, humidity, barometric pressure,
 and VOCs (volatile organic chemicals, like some gases, alcohols, etc.). The 
 pressure sensor is sensitive enough to be used as an altimeter. My installation
 will be stationary, so this isn't useful to me, but it is a neat fact. It
-connects to the board via I2C or SPI. The libary I've been trying to use to read
-data off the chip has been rather hard to understand for me. I haven't
+connects to the board via I2C or SPI. The library I've been trying to use to 
+read data off the chip has been rather hard to understand for me. I haven't
 yet managed to implement BME680 support, although I did manage to get it working
 in a previous project, so I imagine if I do some digging I'll figure it out
 again.
