@@ -9,8 +9,8 @@ tags: [programming,electronics,arduino]
 Today I started on a new ESP8266 project. That is, I started again on an old
 ESP8266 project. It's just a simple garden monitor. It's intended to track
 soil moisture, atmospheric conditions, and PM2.5, a measure of air quality. 
-Unfortunately I've had to drop the PM2.5 feature because I don't have any proper
-diodes to use and my hacky workaround to that ended up not working.
+Unfortunately I've had to drop the PM2.5 sensor for reasons I'll get  into
+later.
 
 ![The ESP8266 on a breadboard](/assets/images/arduino_1.jpg)
 
@@ -28,11 +28,12 @@ I was following [this instructable](https://www.instructables.com/Multiple-Analo
 because I liked its simplicity. It simply uses diodes and a resistor to isolate 
 the two inputs. Unfortunately, I don't have a diode kit, so I tried to get even
 more hacky and use LEDs to stop the pixies from flowing the wrong way. This
-didn't work very well. The lowest-voltage LEDs I have require 2v. They still
-let some electricity by, but the data I was able to read was ultimately unusable.
-I'm guessing this is because the LEDs caused a voltage drop, which in turn made
-the reading on the analog pin way lower than it should have been. When I order
-plain old diodes, I'm also going to try to find some 1v LEDs (and a real analog
+didn't work very well. The ESP8266 accepts up to 1v on the analog pin, but the 
+lowest-voltage LEDs I have require 2v. They still let some electricity by, but 
+the data I was able to read was ultimately unusable. I'm guessing this is 
+because the LEDs caused a voltage drop, which in turn madethe reading on the 
+analog pin way lower than it should have been. When I order plain old diodes, 
+I'm also going to try to find some 1v LEDs for kicks (and a real analog 
 multiplexer just to be safe).
 
 ![The BME680](/assets/images/arduino_3_bme680.jpg)
