@@ -105,7 +105,10 @@ significant difference it should be possible to generate an offset with data
 from the RH sensor on the BME680) and a glass of tap water being 100 (again, I 
 haven't done extensive testing, but my gut tells me water with more dissolved 
 solids will be more conductive and thus skew the reading as well. I'll cross 
-that bridge when I get to it.)
+that bridge when I get to it.) Another problem: when the unit loses power, it 
+forgets everything, so it has to calibrated every time it's powered on. I can
+probably get around this by adding some kind of flash memory, but honestly I
+don't know a whole lot about adding permanent storage to microcontrollers.
 
 At some point, I'll throw the code up on Github under an open-source license 
 (probably GPLv3). It's still extremely rudimentary stuff, though, and until I've
@@ -119,6 +122,8 @@ TODO:
 * get BME680 working
 * get WiFi/MQTT working
 * figure out an easy way to integrate this whole thing into HassIO
+* add some permanent storage so that the unit doesn't need to be calibrated as often
+* alternatively, go the Windows Mobile route and try to make sure the unit NEVER powers down completely
 
 FAR-OUT TODO:
 * design a custom circuit to get cost/power usage as low as possible
