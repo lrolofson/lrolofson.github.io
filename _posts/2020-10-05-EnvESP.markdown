@@ -89,9 +89,9 @@ The only thing I managed to get working was the soil moisture sensor. Remember
 how I said the analog pin reads a 10-bit unsigned integer from 0-1023, but that
 it wasn't as simple as dividing the input by 1023? The actual value output by
 the sensor in ambient air isn't 0. it's between 700 and 800. And when the sensor
-is submerged in water, it doesn't output 1023. It outputs somewhere between 300
-and 400. So not only is the range of the sensor smaller than the analog pin,
-it's inverted! I solved this by using a mapping function. 
+is submerged in water, it doesn't output 1023. It outputs somewhere around 400.
+So not only is the range of the sensor smaller than the analog pin, it's 
+inverted! I solved this by using a mapping function. 
 
 When the unit is powered on, it enters a calibration mode where the user holds
 the moisture sensor in the open air until an LED stops blinking, and then 
