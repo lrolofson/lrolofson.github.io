@@ -3,7 +3,7 @@ layout: post
 title:  "New Electronics Project, Same As The Old Electronics Project"
 date:   2020-10-05 22:11 -0500
 categories: [blog,projects]
-tags: [programming,electronics,arduino]
+tags: [programming,electronics,arduino,EnvESP]
 ---
 
 Today I started on a new ESP8266 project. That is, I started again on an old
@@ -14,13 +14,22 @@ later.
 
 ![The ESP8266 on a breadboard](/assets/images/arduino_1.jpg)
 
-First, I put the ESP8266 board (a NodeMCU clone) and a power supply on a 
-breadboard. Simple stuff.
+First, I put a NodeMCU board and a power supply on a 
+breadboard. Simple stuff. I'm not actually using the power supply yet, but I 
+figured it would be more convienient to put it on at the beginning to make sure
+I leave enough room on the breadboard for it.
+
+The NodeMCU is an open-source IoT platform. Basically, it's a cheap little
+microcontroller board that you upload a program to over a USB cable to tell it
+to do things. The NodeMCU is well-suited to the "Internet of Things" because it 
+has an on-board WiFi module. In this project, I'll be using that capability to
+track changes in soil and atmospheric conditions and generate alerts based on
+that information. Also to make graphs, because graphs are pretty.
 
 ![The PM2.5 sensor, which I can't actually use yet.](/assets/images/arduino_2_pm2.5.jpg)
 
 Here's the PM2.5 sensor I intended to use. It's from a company called
-Keyestudio and is read over the analog pin. My ESP8266 only has one analog pin,
+Keyestudio and is read over the analog pin. The NodeMCU only has one analog pin,
 so in order to use more than one analog device you have to be a bit clever with
 your circuit design.
 
@@ -28,7 +37,7 @@ I was following [this instructable](https://www.instructables.com/Multiple-Analo
 because I liked its simplicity. It simply uses diodes and a resistor to isolate 
 the two inputs. Unfortunately, I don't have a diode kit, so I tried to get even
 more hacky and use LEDs to stop the pixies from flowing the wrong way. This
-didn't work very well. The ESP8266 accepts up to 1v on the analog pin, but the 
+didn't work very well. The NodeMCU accepts up to 1v on the analog pin, but the 
 lowest-voltage LEDs I have require 2v. They still let some electricity by, but 
 the data I was able to read was ultimately unusable. I'm guessing this is 
 because the LEDs caused a voltage drop, which in turn madethe reading on the 
@@ -133,3 +142,6 @@ together to enable tracking on a large scale (this one might necessitate
 switching to something other than an ESP8266, I dunno)
 
 -- Leland
+
+P.S. This post isn't really where I want it to be, explanatory-wise. Before my
+next post, I'll probably improve it.
