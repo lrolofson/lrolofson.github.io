@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Arduino Project, Same As The Old Arduino Project"
+title:  "New Electronics Project, Same As The Old Electronics Project"
 date:   2020-10-05 22:11 -0500
 categories: [blog,projects]
 tags: [programming,electronics,arduino]
