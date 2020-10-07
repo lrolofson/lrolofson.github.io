@@ -37,7 +37,7 @@ Here's my first attempt at putting it all together. What a rat's nest! It also j
 
 ![Busted Breadboard](/assets/images/arduino_6_breadboardproblem.jpg)
 
-A misaligned rail. That makes sense. In this case, it was bridging a 3v pin to a ground pin. No wonder the ESP hated it! The short must have tripped something protection on my PC, because a bunch of USB ports went dead, leaving me without a keyboard. Luckily, this was easily remedied with a reboot.
+A misaligned rail. That makes sense. In this case, it was bridging a 3v pin to a ground pin. No wonder the ESP hated it! The short must have tripped something on my PC, because a bunch of USB ports went dead, leaving me without a keyboard. Luckily, this was easily remedied with a reboot.
 
 ![Partial Prototype](/assets/images/arduino_7_partialproto.jpg)
 
@@ -63,9 +63,7 @@ TODO:
 FAR-OUT TODO:
 * design a custom circuit to get cost/power usage as low as possible
 * slap a solar panel and a battery on the thing
-* investigate BLE mesh as a solution for networking lots of these things 
-together to enable tracking on a large scale (this one might necessitate
-switching to something other than an ESP8266, I dunno)
+* investigate BLE mesh as a solution for networking lots of these things together to enable tracking on a large scale (this would mean moving to a different microcontroller)
 
 -- Leland
 
