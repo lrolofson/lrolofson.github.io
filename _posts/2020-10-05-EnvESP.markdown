@@ -13,7 +13,7 @@ This project (which has yet to be named) is a simple garden monitor, intended to
 
 This is a NodeMCU board and a power supply on a breadboard. Simple stuff. I'm not actually using the power supply yet, but I figured it would be more convenient to put it on at the beginning to make sureI leave enough room on the breadboard for it.
 
-The NodeMCU is an open-source IoT platform. Basically, it's a cheap little microcontroller board that you upload a program to over a USB cable to tell it to do things. The NodeMCU is well-suited to the "Internet of Things" because it has an on-board WiFi module. In this project, I'll be using that capability to track changes in soil and atmospheric conditions and generate alerts based on that information. Also to make graphs, because graphs are pretty.
+The NodeMCU is an open-source IoT platform. Basically, it's a cheap little microcontroller board that you upload a program to over a USB cable to tell it to do things. The NodeMCU is well-suited for IoT because it has an on-board WiFi module. In this project, I'll be using that capability to track changes in soil and atmospheric conditions and generate alerts based on that information. Also to make graphs, because graphs are pretty.
 
 ![The PM2.5 sensor, which I can't actually use yet.](/assets/images/arduino_2_pm2.5.jpg)
 
