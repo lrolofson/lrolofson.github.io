@@ -213,6 +213,6 @@ p {
     transform: translate(-5px) rotate(-1deg);
   }
   100% {
-    tranform: translate(5px) rotate(1deg);
+    transform: translate(5px) rotate(1deg);
   }
 }/*# sourceMappingURL=getwell.css.map */
