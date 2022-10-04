@@ -66,8 +66,8 @@ p {
 
 .flower-head {
   display: inline-grid;
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 8em;
   background: #f6a90f;
   border-radius: 50% 50% 50% 50%;
   margin: auto;
@@ -83,7 +83,7 @@ p {
 
 .flower-stem {
   background-color: green;
-  height: 200px;
+  height: 120px;
   width: 1em;
   margin: auto;
 }
@@ -202,7 +202,7 @@ p {
     transform: translate(-5px) rotate(-1deg);
   }
   100% {
-    tranform: translate(5px) rotate(1deg);
+    transform: translate(5px) rotate(1deg);
   }
 }
 @keyframes stem-wiggle {
