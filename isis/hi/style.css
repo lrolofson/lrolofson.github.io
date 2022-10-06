@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body,
+html {
+	height: 100%;
+	display: grid;
+	background: linear-gradient(cyan, magenta);
+}
+
+#hi {
+	font-size:5vw;
+}
+
+p {
+	color: black;
+	font-family: Bebas Neue, cursive;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 10vw;
+	text-shadow: 2px 2px cyan, 2px -2px magenta, -2px -2px yellow;
+	margin: auto;
+	animation-name: trippy;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes trippy {
+	from {
+		color: rgb(20, 51, 51);
+		text-shadow: 2px 2px cyan, 2px -2px magenta, -2px -2px yellow;
+		transform: rotate(1deg);
+	}
+	50% {
+		color: rgb(51, 20, 51);
+		text-shadow: 2px -3px cyan, -3px 1px magenta, 1px 2px yellow;
+		transform: rotate(-2deg);
+	}
+	80% {
+		color: rgb(51, 51, 20);
+		text-shadow: -3px -2px cyan, 3px 1px magenta, 1px -1px yellow;
+		transform: rotate(2deg);
+	}
+	to {
+		color: rgb(20, 51, 51);
+		text-shadow: 2px 2px cyan, 2px -2px magenta, -2px -2px yellow;
+		transform: rotate(1deg);
+	}
+}
