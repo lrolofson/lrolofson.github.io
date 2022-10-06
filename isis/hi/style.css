@@ -17,6 +17,7 @@ p {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 10vw;
+	text-align: center;
 	text-shadow: 2px 2px cyan, 2px -2px magenta, -2px -2px yellow;
 	margin: auto;
 	animation-name: trippy;
